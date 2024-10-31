@@ -1,0 +1,31 @@
+.ui.inverted.list .list>a.item>.icon, .ui.inverted.list>a.item>.icon {
+    color: white;
+    
+  }
+  
+  .icon-twitter:hover .twitter.huge.links icon {
+    color: #1DA1F2;
+  }
+  
+  .icon-facebook:hover .facebook.huge.links icon {
+    color: #3B5998;
+  }
+  
+  .icon-instagram:hover .instagram.huge.links icon {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .icon-youtube:hover .youtube.huge.links icon {
+    color: #FF0000;
+  }
+  
+  .ui.horizontal.inverted.list .item {
+    transition: transform 0.3s ease; 
+  }
+  
+  .ui.horizontal.inverted.list .item:hover {
+    transform: translateY(-7px); 
+  }

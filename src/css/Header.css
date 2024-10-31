@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f69100;
+    padding: 0 10px;
+    border-bottom: 5px solid #d27300;
+  }
+
+  .navbar-section {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .links  {
+    justify-content: left;
+    flex-grow: 1;
+  }
+  
+  .links  a {
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 24px 10px;
+    text-decoration: none;
+  }
+
+
+  .links  a:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+   
+  }
+  
+  
+  .Logo {
+    width: 60px;
+    height: 45px;
+  }
+  
+  .ui.animated.button {
+    background-color: transparent;
+  }

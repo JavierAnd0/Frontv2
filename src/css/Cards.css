@@ -1,0 +1,98 @@
+.headerCards{
+    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 100%; /* Asegura que el encabezado ocupe el ancho completo */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    }
+  
+  .titularCards{
+    color: #1DA1F2;
+    font-size: 20px;
+  }
+  
+  .titular-description{
+    color: #7E7E7E;
+    font-weight: bold;
+  }
+  
+  .ui.card {
+    flex: 1 1 30%;
+    max-width: 500px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* Agrega la transición de transformación aquí */
+  }
+  
+  .ui.card:hover {
+    transform: translateY(-10px); /* Aplica la transformación a toda la tarjeta en hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ui.card {
+      flex-basis: 45%; /* Reducir el ancho de las tarjetas en pantallas más pequeñas */
+    }
+  }
+  
+  
+  .lastPrice{
+    text-decoration: line-through;
+    margin-top: 10px;
+  }
+  
+  .ui.card>.content>.description, .ui.cards>.card>.content>.description {
+    clear: both;
+    color: rgba(0, 0, 0, .68);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+    margin-bottom: 15px;
+  }
+  
+  
+  .btn-comprar{
+    width: 100%;
+    background-color:#d27300 ;
+    color:  white;
+    font-weight: bold;
+    
+  }
+  
+  .btn-comprar:hover{
+    background-color: #1d83f2;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .ContainerCards {
+    margin-top: 20px;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: space-around; /* Centra las tarjetas horizontalmente */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
+    flex-wrap: wrap; /* Permite el ajuste de línea en pantallas pequeñas */
+    width: 100%;
+  }
+  
+  .ui.card:first-child {
+    margin-top: auto !important;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
