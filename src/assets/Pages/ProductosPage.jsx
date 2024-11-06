@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Header } from 'semantic-ui-react';
-import Header2 from '../Components/Header';
 import Footer from '../Components/Footer';
 import Productos from '../Components/Productos';
 
@@ -15,7 +14,6 @@ const ProductosPage = () => {
 
   return (
     <>
-      <Header2 />
 
       <Header as="h1" textAlign="center" style={{ marginTop: '20px' }}>
         Productos Disponibles

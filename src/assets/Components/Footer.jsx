@@ -1,49 +1,47 @@
-import React from "react";
-import { Segment, Container, Grid, List, Icon } from 'semantic-ui-react';
+import React from 'react';
+import {
+  Container,
+  Divider,
+  Image,
+  List,
+  Segment,
+} from 'semantic-ui-react';
+import Logo from "../img/LogoCacharreria.png";
 import { Link } from 'react-router-dom';
-import { px } from "framer-motion";
-import Form from "./Form";
 
-const Footer = () => {
-    return (
-      <Segment inverted vertical style={{ padding: '0.5em 0em', marginTop: '5em', backgroundColor: '#f69100' }}>
-        <Container textAlign='center'>
-        <Grid columns={3} divided inverted stackable style={{ marginTop: '0em' }}>
-            <Grid.Row>
-              <Grid.Column>
-                <List.Item as={Link} to="/sobre-nosotros" style={{ color: 'white' }}>Sobre nosotros</List.Item>
-              </Grid.Column>
-              <Grid.Column>
-                <List.Item as={Link} to= '/' style={{ color: 'white', fontSize: '1em', textDecoration: 'none' }}>Cachaerria don Juan</List.Item>
-              </Grid.Column>
-              <Grid.Column>
-                <List.Item as={Link} to="/legal" style={{ color: 'white' }}>Avisos legales</List.Item>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>  
-          <Grid columns={1} divided inverted stackable>
-            <Grid.Row>
-              <Grid.Column>
-                <List horizontal inverted style={{ justifyContent: 'space-around' }}>
-                  <List.Item as='a' href="#" className="icon-twitter" style={{ margin: '0 em', marginTop: '1em' }}>
-                    <Icon name='twitter' link size='big' />
-                  </List.Item>
-                  <List.Item as='a' href="#" className="icon-facebook" style={{ margin: '0 em', marginTop: '1em'  }}>
-                    <Icon name='facebook' link size='big' />
-                  </List.Item>
-                  <List.Item as='a' href="#" className="icon-instagram" style={{ margin: '0 em', marginTop: '1em'  }}>
-                    <Icon name='instagram' link size='big' />
-                  </List.Item>
-                  <List.Item as='a' href="#" className="icon-youtube" style={{ margin: '0 em', marginTop: '1em'  }}>
-                    <Icon name='youtube' link size='big' />
-                  </List.Item>
-                </List>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Container>
-      </Segment>
-    );
-  };
-  
-  export default Footer;
+
+const FixedMenuLayout = () => (
+  <div>
+    <Segment 
+      inverted 
+      vertical 
+      style={{ 
+        margin: '5em 0em 0em', 
+        padding: '1em 0em', 
+        backgroundColor: '#FF851B', 
+      }}
+    >
+      <Container textAlign='center'>
+        <Divider inverted section />
+        <Link to="/">
+        <Image centered a='/' size='mini' src={Logo} />
+        </Link>
+        <List horizontal inverted divided link size='small' style={{ fontSize: '1.2em' }}> {/* Aumenta el tamaño del texto */}          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
+            Site Map
+          </List.Item>
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
+            Contact Us
+          </List.Item>
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
+            Terms and Conditions
+          </List.Item>
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
+            Privacy Policy
+          </List.Item>
+        </List>
+      </Container>
+    </Segment>
+  </div>
+);
+
+export default FixedMenuLayout;

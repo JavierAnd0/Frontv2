@@ -1,71 +1,55 @@
 import React from 'react';
-import '../../css/Cards.css'; 
-import productoDestacado1 from "../../assets/img/productoDestacado1.jpg";
-import productoDestacado2 from "../../assets/img/productoDestacado2.jpg";
-import productoDestacado3 from "../../assets/img/productoDestacado3.jpg";
+import { Card, Icon, Image } from 'semantic-ui-react';
+import '../../css/Cards.css';
 
+// Datos de las tarjetas para simplificar y hacer el código más reutilizable
+const cardData = [
+  {
+    image: '/images/avatar/large/matthew.png',
+    header: 'Matthew',
+    meta: 'Joined in 2015',
+    description: 'Matthew is a musician living in Nashville.',
+    friends: 22,
+  },
+  {
+    image: '/images/avatar/large/matthew.png',
+    header: 'Matthew',
+    meta: 'Joined in 2015',
+    description: 'Matthew is a musician living in Nashville.',
+    friends: 22,
+  },
+  {
+    image: '/images/avatar/large/matthew.png',
+    header: 'Matthew',
+    meta: 'Joined in 2015',
+    description: 'Matthew is a musician living in Nashville.',
+    friends: 22,
+  },
+];
 
-const Cards = () => {
-    return (
-        <section className="ContainerCards">
-            <div className="headerCards">
-                <h5 className="titularCards">¡Ofertas por tiempo limitado!</h5>
-                <p className="titular-description">No esperes mas y ahorra hoy mismo</p>
-            </div>
+const CardExampleCard = () => (
+  <div className="responsive-card-group">
+    <Card.Group stackable itemsPerRow={3}>
+      {cardData.map((card, index) => (
+        <Card key={index}>
+          <Image src={card.image} wrapped ui={false} />
+          <Card.Content>
+            <Card.Header>{card.header}</Card.Header>
+            <Card.Meta>
+              <span className="date">{card.meta}</span>
+            </Card.Meta>
+            <Card.Description>{card.description}</Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              {card.friends} Friends
+            </a>
+          </Card.Content>
+        </Card>
+      ))}
+    </Card.Group>
+  </div>
+);
 
-            <div className="cardsContainer">
-
-                <div className="ui card">
-                    <div className="image">
-                        <img src={productoDestacado1} />
-                    </div>
-                    <div className="content">
-                        <a className="header">Xiaomi Redmi Note 11</a>
-                        <div className="meta">
-                            <span className="lastPrice">Antes $ 1'200.000</span>
-                        </div>
-                        <div className="description">$ 840.000 </div>
-                    </div>
-                    <div className="extra content">
-                        <button className="btn-comprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div className="ui card">
-                    <div className="image">
-                        <img src={productoDestacado2} />
-                    </div>
-                    <div className="content">
-                        <a className="header">Combo Gamer</a>
-                        <div className="meta">
-                            <span className="lastPrice">Antes $ 3'500.000</span>
-                        </div>
-                        <div className="description">$ 2'450.000 </div>
-                    </div>
-                    <div className="extra content">
-                        <button className="btn-comprar">Comprar</button>
-                    </div>
-                </div>
-
-                <div className="ui card">
-                    <div className="image">
-                        <img src={productoDestacado3} />
-                    </div>
-                    <div className="content">
-                        <a className="header">Pizza Congelada</a>
-                        <div className="meta">
-                            <span className="lastPrice">Antes $ 24.000</span>
-                        </div>
-                        <div className="description">$ 16.800 </div>
-                    </div>
-                    <div className="extra content">
-                        <button className="btn-comprar">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    )
-}
-
-export default Cards
+export default CardExampleCard;

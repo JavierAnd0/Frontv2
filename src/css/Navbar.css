@@ -1,0 +1,28 @@
+.navbar-link {
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #f69100;
+}
+
+.ui.inverted.menu .navbar-link:hover {
+  color: #ffa333;
+}
+
+.ui.segment.menu {
+  background: linear-gradient(60deg, #ff751a, #f69100);
+  width: 100%;
+}
+
+.ui.segment.menu .item {
+  padding: 1em;
+}
+
+
+.ui.button.icon {
+  font-size: 1.2em;
+}

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
 import logo from '../img/LogoCacharreria.png'; // Asegúrate de que la ruta sea correcta
-import Header2 from '../Components/Header';
 import Footer from '../Components/Footer';
+import Navbar from '../Components/Navbar';
 
 const LogeoPage = () => {
   return (
     <>
-      <Header2 />
+    <Navbar />
       <Grid textAlign="center" style={{ height: '100vh' }} verticalAlign="middle">
         <Grid.Column style={{ maxWidth: 450 }}>
           <Segment raised style={{ padding: '2em', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>

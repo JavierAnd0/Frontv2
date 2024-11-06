@@ -1,14 +1,20 @@
 import React from 'react'
-import Header from '../Components/Header'
-
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 
 
 
 const ContactanosPage = () => {
   return (
-    <><Header/> 
-    <div>ContactanosPage</div> </>
+    <>
+    <Navbar /> 
+
+
+    <Footer />
+    <div>ContactanosPage</div> 
+    </>
+   
   )
 }
 

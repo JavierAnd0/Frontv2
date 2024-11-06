@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form, Grid, Header, Image, Segment } from 'semantic-ui-react';
-import Header2 from '../Components/Header';
 import Footer from '../Components/Footer';
 import logo from '../img/LogoCacharreria.png'; // Asegúrate de que la ruta sea correcta
 

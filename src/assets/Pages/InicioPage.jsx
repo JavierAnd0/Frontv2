@@ -1,19 +1,26 @@
 import React from 'react'
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
 import Carousel from '../Components/Carousel';
+import Infoindex from '../Components/Infoindex';
+import Navbar from '../Components/Navbar';
+import Banner from '../Components/Banner';
+import Cards from '../Components/Cards';
+import Footer from '../Components/Footer';
 
-import Navbar from '../Components/NavbarLg.jsx';
-import NavbarLg from '../Components/NavbarLg.jsx';
+// Banner
+import bannerHome from '../img/tiendaHome.jpg';
+const bannerView = [bannerHome];
+
+
 
 const InicioPage = () => {
   return (
-    <>
-    <Header />
+    <>  
+    <Navbar />
+    <Banner banner={bannerView} />
+    <Infoindex />
     <Carousel />
-
-    <Footer />
-    
+    <Cards />
+    <Footer/>
     </>
   )
 }
