@@ -17,10 +17,10 @@ const { MediaContextProvider, Media } = createMedia({
 const DesktopBanner = ({ banner }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
-    <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-      Welcome to our store
+    <Header size='huge' inverted className="centeredText" as='h1' textAlign='center' style={{paddingBottom:"10px", backgroundColor: 'orange', color: 'white', padding: '10px' , borderRadius: "7px"}}>
+      Bienvenido a nuestra tienda
     </Header>
-    <Button inverted color='orange' size='large' className="centeredButton">Click Here</Button>
+    <Button inverted color='orange' size='large' className="centeredButton">Click aqui</Button>
   </Container>
 );
 
@@ -28,8 +28,8 @@ const DesktopBanner = ({ banner }) => (
 const MobileBanner = ({ banner }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
-    <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-      Welcome to our store
+    <Header size='huge' inverted className="centeredText" as='h1' textAlign='center' style={{ backgroundColor: 'orange', color: 'white', padding: '10px' }}>
+      Bienvenido a nuestra tienda
     </Header>
     <Button inverted color='orange' size='medium' className="centeredButton">Click Here</Button>
   </Container>

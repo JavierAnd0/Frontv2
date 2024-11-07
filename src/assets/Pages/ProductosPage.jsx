@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Header } from 'semantic-ui-react';
 import Footer from '../Components/Footer';
+import Navbar from '../Components/Navbar';
 import Productos from '../Components/Productos';
 
 const ProductosPage = () => {
@@ -14,7 +15,7 @@ const ProductosPage = () => {
 
   return (
     <>
-
+<Navbar />
       <Header as="h1" textAlign="center" style={{ marginTop: '20px' }}>
         Productos Disponibles
       </Header>

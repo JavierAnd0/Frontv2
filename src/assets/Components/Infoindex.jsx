@@ -1,6 +1,7 @@
 import { createMedia } from '@artsy/fresnel';
 import PropTypes from 'prop-types';
 import React from 'react';
+import "../img/cacharreria2.jpg";
 import {
   Button,
   Grid,
@@ -59,22 +60,20 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              We Help Companies and Companions
+              ¿Nuestros productos?
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              We can give your company superpowers to do things that they never thought possible.
-              Let us delight your customers and empower your needs... through pure data analytics.
+              Nuestros productos son seleccionados de la mayor calidad del mercado, siendo asi importaciones directas con los proveedores con la mejor calidad.
             </p>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              We Make Bananas That Can Dance
+              Precios:
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-              bioengineered.
+              Al tener conexion directa con los proveedores tenemos los mejores precios del mercado, siendo nuestro fuerte y ademas de mostrar la mejor variedad de productos
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
+            <Image bordered rounded size='large' src='../img/cacharreria2.jpg' />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
