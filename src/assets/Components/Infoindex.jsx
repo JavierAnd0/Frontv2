@@ -17,14 +17,12 @@ const { MediaContextProvider, Media } = createMedia({
   },
 });
 
-// Definición de DesktopContainer
 const DesktopContainer = ({ children }) => (
   <Media greaterThan='tablet'>
     <div>{children}</div>
   </Media>
 );
 
-// Definición de MobileContainer
 const MobileContainer = ({ children }) => (
   <Media at='mobile'>
     <div>{children}</div>
@@ -39,7 +37,6 @@ MobileContainer.propTypes = {
   children: PropTypes.node,
 };
 
-// Definición de ResponsiveContainer
 const ResponsiveContainer = ({ children }) => (
   <MediaContextProvider>
     <DesktopContainer>{children}</DesktopContainer>
@@ -51,7 +48,6 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 };
 
-// Componente principal HomepageLayout
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '2em 0em' }} vertical>
