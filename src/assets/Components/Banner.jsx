@@ -4,7 +4,6 @@ import { Container, Image, Button, Header } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import '../../css/Banner.css';
 
-// Definición de breakpoints
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
     mobile: 0,
@@ -13,25 +12,23 @@ const { MediaContextProvider, Media } = createMedia({
   },
 });
 
-// Definición de DesktopBanner
 const DesktopBanner = ({ banner }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
     <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-      Welcome to our store
+    Bienvenidos a nuestra tienda
     </Header>
-    <Button inverted color='orange' size='large' className="centeredButton">Click Here</Button>
+    <Button  color='orange' size='large' className="centeredButton">VER TODO</Button>
   </Container>
 );
 
-// Definición de MobileBanner
 const MobileBanner = ({ banner }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
     <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-      Welcome to our store
+      Bienvenidos a nuestra tienda
     </Header>
-    <Button inverted color='orange' size='medium' className="centeredButton">Click Here</Button>
+    <Button  color='orange' size='medium' className="centeredButton">VER TODO</Button>
   </Container>
 );
 
@@ -43,7 +40,6 @@ MobileBanner.propTypes = {
   banner: PropTypes.array.isRequired,
 };
 
-// Contenedor Responsive
 const ResponsiveBanner = ({ banner }) => (
   <MediaContextProvider>
     <Media greaterThan='tablet'>

@@ -7,7 +7,7 @@ import Cards from '../Components/Cards';
 import Footer from '../Components/Footer';
 
 // Banner
-import bannerHome from '../img/tiendaHome.jpg';
+import bannerHome from '../img/tiendaHOme.jpg';
 const bannerView = [bannerHome];
 
 
