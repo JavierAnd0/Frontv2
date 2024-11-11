@@ -27,19 +27,19 @@ const ImageCarousel = () => {
       <Slider>
         <Slide tag="a" index={0}>
           <Image 
-            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-s5nlQK14mDc%2FUtL0TEeJ9RI%2FAAAAAAAAY2U%2FLYDmcixgR1M%2Fs1600%2F187959.jpg&f=1&nofb=1&ipt=00ba5303c46ba81f63d81bdfcdf39e8b871814fefec6dad041206af4ba75e106&ipo=images" 
+            src="https://i.ytimg.com/vi/_fhANuogFZQ/maxresdefault.jpg" 
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </Slide>
         <Slide tag="a" index={1}>
           <Image 
-            src="https://example.com/image2.png" 
+            src="https://www.encuentraloenputumayo.com/wp-content/uploads/2021/08/papeleria-cacharreria-pinateria-detalles-panalera-acuario-orito-putumayo-5.jpg" 
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </Slide>
         <Slide tag="a" index={2}>
           <Image 
-            src="https://example.com/image3.png" 
+            src="https://i.ytimg.com/vi/oHPu9KdKW9Q/maxresdefault.jpg" 
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </Slide>

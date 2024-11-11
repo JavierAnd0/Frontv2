@@ -9,7 +9,6 @@ import {
 import Logo from "../img/LogoCacharreria.png";
 import { Link } from 'react-router-dom';
 
-
 const FixedMenuLayout = () => (
   <div>
     <Segment 
@@ -24,19 +23,20 @@ const FixedMenuLayout = () => (
       <Container textAlign='center'>
         <Divider inverted section />
         <Link to="/">
-        <Image centered a='/' size='mini' src={Logo} />
+          <Image centered src={Logo} style={{ width: '150px', height: 'auto' }} />
         </Link>
-        <List horizontal inverted divided link size='small' style={{ fontSize: '1.2em' }}> {/* Aumenta el tamaño del texto */}          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
-            Site Map
+        <List horizontal inverted divided link size='small' style={{ fontSize: '1.2em' }}>
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF', fontWeight: 'bold' }}>
+            Ubicacion
           </List.Item>
-          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
-            Contact Us
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF', fontWeight: 'bold' }}>
+            Contactanos
           </List.Item>
-          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
-            Terms and Conditions
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF', fontWeight: 'bold' }}>
+            Terminos y condiciones
           </List.Item>
-          <List.Item as='a' href='#' style={{ color: '#FFFFFF' }}> {/* Color de texto blanco */}
-            Privacy Policy
+          <List.Item as='a' href='#' style={{ color: '#FFFFFF', fontWeight: 'bold' }}>
+            Politica de privacidad
           </List.Item>
         </List>
       </Container>

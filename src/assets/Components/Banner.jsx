@@ -16,7 +16,7 @@ const DesktopBanner = ({ banner }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
     <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-    Bienvenidos a nuestra tienda
+    Bienvenido a nuestra tienda
     </Header>
     <Button  color='orange' size='large' className="centeredButton">VER TODO</Button>
   </Container>
@@ -26,7 +26,7 @@ const MobileBanner = ({ banner }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
     <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-      Bienvenidos a nuestra tienda
+      Bienvenido a nuestra tienda
     </Header>
     <Button  color='orange' size='medium' className="centeredButton">VER TODO</Button>
   </Container>
