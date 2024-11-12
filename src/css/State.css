@@ -1,0 +1,50 @@
+.bannerContainer {
+    position: relative;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .bannerImage {
+    display: block;
+    width: 100vw;
+    height: auto;
+    max-height: 450px;
+  }
+   
+  .centeredText {
+    text-align: justify;
+    font-size: 4em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    border-radius: 3px; /* Opcional: para esquinas redondeadas */
+  }
+  
+  @media (max-width: 768px) {
+    .bannerContainer {
+      width: 100vw;
+      height: auto;
+    }
+  
+    .bannerImage {
+      width: 100vw;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+    }
+  
+    .centeredText {
+      font-size: 3em;
+      top: 25%;
+    }
+  
+    .centeredButton {
+      top: 60%;
+    }
+  }
+  

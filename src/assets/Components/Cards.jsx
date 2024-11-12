@@ -2,7 +2,6 @@ import React from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react';
 import '../../css/Cards.css';
 
-// Datos de las tarjetas para simplificar y hacer el código más reutilizable
 const cardData = [
   {
     image: '/images/avatar/large/matthew.png',
