@@ -41,19 +41,18 @@ const Navbar = () => {
               </Menu.Item>
               <Menu.Item position="right">
                 <Link to="/login" className="navbar-link">
-                  <Icon name="address card outline" /> Acceder
+                  <Icon name="address card outline" /> Iniciar sesion
                 </Link>
               </Menu.Item>
               <Menu.Item >
-                <Link to="/Sign in" className="navbar-link">
-                  <Icon name="address book" /> Iniciar Sesion
+                <Link to="/registro" className="navbar-link">
+                  <Icon name="address book" /> Registrarse
                 </Link>
               </Menu.Item>
             </Segment>
           </Grid.Column>
         </Grid.Row>
 
-        {/* Mobile and Tablet Menu */}
         <Grid.Row columns={1} only="mobile tablet">
           <Grid.Column>
             <Segment 
@@ -116,7 +115,7 @@ const Navbar = () => {
               </Link>
             </Menu.Item>
             <Menu.Item>
-              <Link to="/" onClick={() => setSidebarVisible(false)} className="navbar-link">
+              <Link to="/registro" onClick={() => setSidebarVisible(false)} className="navbar-link">
                 <Icon name="user" /> Registrarse
               </Link>
             </Menu.Item>

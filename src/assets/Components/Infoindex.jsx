@@ -1,7 +1,6 @@
 import { createMedia } from '@artsy/fresnel';
 import PropTypes from 'prop-types';
 import React from 'react';
-import "../img/cacharreria2.jpg";
 import {
   Button,
   Grid,
@@ -9,6 +8,7 @@ import {
   Image,
   Segment,
 } from 'semantic-ui-react';
+import tiendapasillo from'../img/Fondopasillo.png';
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -69,7 +69,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='../img/cacharreria2.jpg' />
+            <Image bordered rounded size='large' src={tiendapasillo} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
