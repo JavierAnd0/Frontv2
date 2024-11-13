@@ -5,7 +5,6 @@ import person1 from '../img/person1.jpg';
 import person2 from '../img/person2.jpg';
 import person3 from '../img/person3.jpg'; 
 
-// Datos de las tarjetas para simplificar y hacer el código más reutilizable
 const cardData = [
   {
     image: person1,

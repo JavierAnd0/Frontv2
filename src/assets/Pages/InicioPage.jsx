@@ -3,7 +3,6 @@ import Carousel from '../Components/Carousel';
 import Infoindex from '../Components/Infoindex';
 import Navbar from '../Components/Navbar';
 import Banner from '../Components/Banner';
-import Cards from '../Components/Cards';
 import Footer from '../Components/Footer';
 
 // Banner
@@ -19,7 +18,6 @@ const InicioPage = () => {
     <Banner banner={bannerView} />
     <Infoindex />
     <Carousel />
-    <Cards />
     <Footer/>
     </>
   )
