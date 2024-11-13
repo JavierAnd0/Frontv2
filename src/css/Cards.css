@@ -1,7 +1,7 @@
 /* Cards.css */
 
 .responsive-card-group {
-  padding: 2rem;
+  padding: 1rem;
   display: flex; 
   flex-wrap: wrap; /* Allow cards to wrap on small screens */
   justify-content: center; /* Center cards horizontally */
@@ -13,7 +13,7 @@
 
   /* Adapt card styles for larger screens (optional) */
   @media (min-width: 768px) {
-    flex: 1 0 calc(25% - 1rem); /* Adjust size on medium screens */
+    flex: 1 0 calc(5% - 1rem); /* Adjust size on medium screens */
   }
 
   @media (min-width: 1024px) {
@@ -23,6 +23,24 @@
 
 @media (max-width: 600px) {
   .responsive-card-group .ui.card.group .ui.card img {
-    max-height: 80px;
+    max-height: 50px;
   }
+}
+
+/* Cards.css */
+.responsive-card-group {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.responsive-card-group .ui.card {
+  width: 100px; /* Ajusta este valor según tus necesidades */
+  margin: 10px;
+}
+
+.responsive-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

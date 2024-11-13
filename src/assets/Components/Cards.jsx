@@ -1,29 +1,26 @@
 import React from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react';
 import '../../css/Cards.css';
+import person1 from '../img/person1.jpg';
+import person2 from '../img/person2.jpg';
+import person3 from '../img/person3.jpg'; 
 
 // Datos de las tarjetas para simplificar y hacer el código más reutilizable
 const cardData = [
   {
-    image: '/images/avatar/large/matthew.png',
+    image: person1,
     header: 'Matthew',
-    meta: 'Joined in 2015',
-    description: 'Matthew is a musician living in Nashville.',
-    friends: 22,
+   
   },
   {
-    image: '/images/avatar/large/matthew.png',
+    image: person2,
     header: 'Matthew',
-    meta: 'Joined in 2015',
-    description: 'Matthew is a musician living in Nashville.',
-    friends: 22,
+    
   },
   {
-    image: '/images/avatar/large/matthew.png',
+    image: person3,
     header: 'Matthew',
-    meta: 'Joined in 2015',
-    description: 'Matthew is a musician living in Nashville.',
-    friends: 22,
+    
   },
 ];
 
@@ -31,20 +28,10 @@ const CardExampleCard = () => (
   <div className="responsive-card-group">
     <Card.Group stackable itemsPerRow={3}>
       {cardData.map((card, index) => (
-        <Card key={index}>
+        <Card key={index} className="responsive-card">
           <Image src={card.image} wrapped ui={false} />
-          <Card.Content>
+          <Card.Content className='responsive-content'>
             <Card.Header>{card.header}</Card.Header>
-            <Card.Meta>
-              <span className="date">{card.meta}</span>
-            </Card.Meta>
-            <Card.Description>{card.description}</Card.Description>
-          </Card.Content>
-          <Card.Content extra>
-            <a>
-              <Icon name="user" />
-              {card.friends} Friends
-            </a>
           </Card.Content>
         </Card>
       ))}
