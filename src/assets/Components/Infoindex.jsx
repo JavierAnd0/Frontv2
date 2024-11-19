@@ -8,7 +8,7 @@ import {
   Image,
   Segment,
 } from 'semantic-ui-react';
-import tiendapasillo from'../img/Fondopasillo.png';
+import tiendapasillo from '../img/Fondopasillo.png';
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -18,14 +18,15 @@ const { MediaContextProvider, Media } = createMedia({
   },
 });
 
-const DesktopContainer = ({ children }) => (
-  <Media greaterThan='tablet'>
+// Usar parámetros predeterminados en lugar de defaultProps
+const DesktopContainer = ({ children = null }) => (
+  <Media greaterThan="tablet">
     <div>{children}</div>
   </Media>
 );
 
-const MobileContainer = ({ children }) => (
-  <Media at='mobile'>
+const MobileContainer = ({ children = null }) => (
+  <Media at="mobile">
     <div>{children}</div>
   </Media>
 );
@@ -38,7 +39,7 @@ MobileContainer.propTypes = {
   children: PropTypes.node,
 };
 
-const ResponsiveContainer = ({ children }) => (
+const ResponsiveContainer = ({ children = null }) => (
   <MediaContextProvider>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
@@ -52,29 +53,28 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '2em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
+      <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Header as="h3" style={{ fontSize: '2em' }}>
               ¿Nuestros productos?
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Nuestros productos son seleccionados de la mayor calidad del mercado, siendo asi importaciones directas con los proveedores con la mejor calidad.
+              Nuestros productos son seleccionados de la mayor calidad del mercado, siendo así importaciones directas con los proveedores con la mejor calidad.
             </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Header as="h3" style={{ fontSize: '2em' }}>
               Precios:
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Al tener conexion directa con los proveedores tenemos los mejores precios del mercado, siendo nuestro fuerte y ademas de mostrar la mejor variedad de productos
+              Al tener conexión directa con los proveedores, tenemos los mejores precios del mercado, siendo nuestro fuerte y además de mostrar la mejor variedad de productos.
             </p>
           </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src={tiendapasillo} />
+          <Grid.Column floated="right" width={6}>
+            <Image bordered rounded size="large" src={tiendapasillo} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <Grid.Column textAlign='center'>
-          </Grid.Column>
+          <Grid.Column textAlign="center"></Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
