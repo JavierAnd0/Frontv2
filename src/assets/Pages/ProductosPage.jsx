@@ -3,6 +3,7 @@ import { Grid, Header } from 'semantic-ui-react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import Productos from '../Components/Productos';
+import CarouselPro from '../Components/CarouselPro';
 import Martillo from '../img/martillo.jpg';
 import Alicate from '../img/Alicate.jpg';
 import Destornillador from '../img/Destornillador.jpg';
@@ -36,6 +37,9 @@ const ProductosPage = () => {
   return (
     <>
 <Navbar />
+      
+<div style={{ borderBottom: '1px solid #ccc', margin: '20px 0' }} />
+      <CarouselPro />
       <Header as="h1" textAlign="center" style={{ marginTop: '20px' }}>
         Productos Disponibles
       </Header>

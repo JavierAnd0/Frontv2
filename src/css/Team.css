@@ -1,0 +1,10 @@
+.team-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .team-container .ui.card .content .meta {
+    font-style: italic;
+    color: #555;
+  }
+  

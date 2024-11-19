@@ -15,8 +15,8 @@ const { MediaContextProvider, Media } = createMedia({
   const DesktopBanner = ({ banner }) => (
     <Container fluid className="bannerContainer">
       <Image src={banner[0]} fluid className="bannerImage" />
-      <Header size="huge" color="black" className="centeredText" as="h1" textAlign="center" style={{color: '#000', margin: '20px', 
-        padding: '10px 20px', backgroundColor: '#FF6600', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
+      <Header size="huge" color="#333" className="centeredText" as="h1" textAlign="center" style={{color: '#000', margin: '20px', 
+        padding: '10px 20px', backgroundColor: 'linear-gradient(to right, #ADD8E6, #FFFFFF)', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
         fontWeight: 'bold' }}>
       Somos un equipo comprometido y apasionado, compuesto por profesionales de diversas áreas, 
       enfocados en crear valor en cada proyecto. Nuestra misión es superar expectativas mediante 
@@ -30,7 +30,7 @@ const { MediaContextProvider, Media } = createMedia({
     <Container fluid className="bannerContainer">
       <Image src={banner[0]} fluid className="bannerImage" />
       <Header size="huge" color="black" className="centeredText" as="h1" textAlign="center" style={{color: '#000', margin: '20px', 
-        padding: '10px 20px', backgroundColor: '#FF6600', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
+        padding: '10px 20px', backgroundColor: 'linear-gradient(to right, #ADD8E6, #FFFFFF)', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
         fontWeight: 'bold' }}>
       Somos un equipo comprometido y apasionado, compuesto por profesionales de diversas áreas, 
       enfocados en crear valor en cada proyecto. Nuestra misión es superar expectativas mediante 

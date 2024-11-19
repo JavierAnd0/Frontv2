@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Icon, Image } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import '../../css/Cards.css';
 import person1 from '../img/person1.jpg';
 import person2 from '../img/person2.jpg';
@@ -9,17 +9,17 @@ const cardData = [
   {
     image: person1,
     header: 'Matthew',
-   
+    title: 'Desarrollador'
   },
   {
     image: person2,
-    header: 'Matthew',
-    
+    header: 'Sarah',
+    title: 'Diseñadora'
   },
   {
     image: person3,
-    header: 'Matthew',
-    
+    header: 'John',
+    title: 'Gerente de Proyectos'
   },
 ];
 
@@ -31,6 +31,7 @@ const CardExampleCard = () => (
           <Image src={card.image} wrapped ui={false} />
           <Card.Content className='responsive-content'>
             <Card.Header>{card.header}</Card.Header>
+            <Card.Meta>{card.title}</Card.Meta> {/* Aquí se agrega el cargo */}
           </Card.Content>
         </Card>
       ))}
