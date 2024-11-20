@@ -9,6 +9,7 @@ import SobreNosotrosPage from './assets/Pages/SobreNosotrosPage.jsx';
 import ContactanosPage from './assets/Pages/ContactanosPage.jsx';
 import LogeoPage from './assets/Pages/LogeoPage.jsx';
 import RegistroPage from './assets/Pages/RegistroPage.jsx';
+import ApiPage from './assets/Pages/Api.jsx';
 import 'semantic-ui-css/semantic.min.css';
 
 
@@ -64,6 +65,7 @@ function App() {
           <Route path="/contactanos" element={<AnimatedRoute element={<ContactanosPage />} />} />
           <Route path="/login" element={<AnimatedRoute element={<LogeoPage />} />} />
           <Route path="/registro" element={<AnimatedRoute element={<RegistroPage />} />} />
+          <Route path="/api" element={<AnimatedRoute element={<ApiPage />} />} />
         </Routes>
       </AnimatePresence>
     </>
