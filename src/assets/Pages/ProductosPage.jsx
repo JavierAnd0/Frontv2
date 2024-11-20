@@ -39,7 +39,7 @@ const ProductosPage = () => {
 <Navbar />
       
 <div style={{ borderBottom: '1px solid #ccc', margin: '20px 0' }} />
-      <CarouselPro />
+     
       <Header as="h1" textAlign="center" style={{ marginTop: '20px' }}>
         Productos Disponibles
       </Header>
