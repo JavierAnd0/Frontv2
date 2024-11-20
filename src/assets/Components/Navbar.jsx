@@ -37,9 +37,6 @@ const Navbar = () => {
                 <Link to="/sobre-nosotros" className="navbar-link">Nosotros</Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/contactanos" className="navbar-link">Contactanos</Link>
-              </Menu.Item>
-              <Menu.Item>
                 <Link to="/api" className="navbar-link">Ubicacion</Link>
                 
               </Menu.Item>
