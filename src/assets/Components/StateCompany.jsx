@@ -16,7 +16,7 @@ const { MediaContextProvider, Media } = createMedia({
     <Container fluid className="bannerContainer">
       <Image src={banner[0]} fluid className="bannerImage" />
       <Header size="huge" color="black" className="centeredText" as="h1" textAlign="center" style={{color: '#000', margin: '20px', 
-        padding: '10px 20px', backgroundColor: '#FF6600', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
+        padding: '10px 20px', backgroundColor: 'linear-gradient(to right, #ADD8E6, #FFFFFF)', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
         fontWeight: 'bold' }}>
       En The Home Depot, nos dedicamos a ofrecer una amplia variedad de productos útiles para el hogar y soluciones prácticas a precios accesibles. 
       Nos comprometemos a brindar calidad y atención cercana a cada cliente, asegurando que encuentren todo lo que necesitan en un solo lugar.
@@ -28,7 +28,7 @@ const { MediaContextProvider, Media } = createMedia({
     <Container fluid className="bannerContainer">
       <Image src={banner[0]} fluid className="bannerImage" />
       <Header size="huge" color="black" className="centeredText" as="h1" textAlign="center" style={{color: '#000', margin: '20px', 
-        padding: '10px 20px', backgroundColor: '#FF6600', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
+        padding: '10px 20px', backgroundColor: 'linear-gradient(to right, #ADD8E6, #FFFFFF)', borderRadius: '8px', boxShadow: '2px 4px 8px rgba(0, 0, 0, 0.3)', letterSpacing: '1px', 
         fontWeight: 'bold' }}>
       En The Home Depot, nos dedicamos a ofrecer una amplia variedad de productos útiles para el hogar y soluciones prácticas a precios accesibles. 
       Nos comprometemos a brindar calidad y atención cercana a cada cliente, asegurando que encuentren todo lo que necesitan en un solo lugar.

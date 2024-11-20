@@ -3,44 +3,49 @@
 .responsive-card-group {
   padding: 1rem;
   display: flex; 
-  flex-wrap: wrap; /* Allow cards to wrap on small screens */
-  justify-content: center; /* Center cards horizontally */
+  flex-wrap: wrap; /* Permitir que las tarjetas se ajusten en pantallas pequeñas */
+  justify-content: center; /* Centrar las tarjetas horizontalmente */
 }
 
-.responsive-card-group .ui.card.group .ui.card {
-  flex: 1 0 calc(33.33% - 1rem); /* Base size for responsive layout */
-  margin: 0.5rem; /* Add spacing between cards */
+.responsive-card-group .ui.card {
+  flex: 1 0 calc(33.33% - 1rem); /* Tamaño base para el diseño responsivo */
+  margin: 0.5rem; /* Espaciado entre tarjetas */
 
-  /* Adapt card styles for larger screens (optional) */
+  /* Adaptar estilos de tarjeta para pantallas más grandes (opcional) */
   @media (min-width: 768px) {
-    flex: 1 0 calc(5% - 1rem); /* Adjust size on medium screens */
+    flex: 1 0 calc(25% - 1rem); /* Ajustar tamaño en pantallas medianas */
   }
 
   @media (min-width: 1024px) {
-    flex: 1 0 calc(20% - 1rem); /* Adjust size on large screens */
+    flex: 1 0 calc(20% - 1rem); /* Ajustar tamaño en pantallas grandes */
   }
 }
 
 @media (max-width: 600px) {
-  .responsive-card-group .ui.card.group .ui.card img {
-    max-height: 50px;
+  .responsive-card-group .ui.card img {
+    max-height: 50px; /* Ajustar el tamaño de la imagen en pantallas pequeñas */
   }
 }
 
-/* Cards.css */
-.responsive-card-group {
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.responsive-card-group .ui.card {
-  width: 100px; /* Ajusta este valor según tus necesidades */
-  margin: 10px;
-}
-
+/* Ajustes para el contenido de la tarjeta */
 .responsive-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: center; /* Alinear verticalmente el contenido */
+}
+
+.responsive-content img {
+  border-radius: 50%; /* Opcional: hacer la imagen circular */
+  width: 80px; /* Ajustar el tamaño de la imagen */
+  height: 80px; /* Ajustar el tamaño de la imagen */
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.responsive-content .header {
+  margin: 0; /* Eliminar márgenes del header */
+  font-size: 1.2em; /* Ajustar tamaño de fuente del header */
+}
+
+.responsive-content .meta {
+  margin: 0; /* Eliminar márgenes del title */
+  color: #666; /* Color del texto del title */
 }

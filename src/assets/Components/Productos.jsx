@@ -3,8 +3,8 @@ import { Card, Button, Image } from 'semantic-ui-react';
 
 const Productos = ({ name, price, description, imageUrl }) => {
   return (
-    <Card>
-      <Image src={imageUrl} wrapped ui={false} />
+    <Card style={{ width: '300px', height: '450px', overflow: 'hidden' }}>
+      <Image src={imageUrl} wrapped ui={false} style={{ height: '200px', objectFit: 'cover' }} />
     <Card.Content>
       <Card.Header>{name}</Card.Header>
 

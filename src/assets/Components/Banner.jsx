@@ -12,26 +12,27 @@ const { MediaContextProvider, Media } = createMedia({
   },
 });
 
-const DesktopBanner = ({ banner }) => (
-  <Container fluid className="bannerContainer">
-    <Image src={banner[0]} fluid className="bannerImage" />
-    <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
-    Bienvenido a nuestra tienda
-    </Header>
-    <Button  color='orange' size='large' className="centeredButton">VER TODO</Button>
-  </Container>
-);
-
-const MobileBanner = ({ banner }) => (
+const DesktopBanner = ({ banner = [] }) => (
   <Container fluid className="bannerContainer">
     <Image src={banner[0]} fluid className="bannerImage" />
     <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
       Bienvenido a nuestra tienda
     </Header>
-    <Button  color='orange' size='medium' className="centeredButton">VER TODO</Button>
+    <Button color='orange' size='large' className="centeredButton">VER TODO</Button>
   </Container>
 );
 
+const MobileBanner = ({ banner = [] }) => (
+  <Container fluid className="bannerContainer">
+    <Image src={banner[0]} fluid className="bannerImage" />
+    <Header size='huge' inverted color='orange' className="centeredText" as='h1' textAlign='center'>
+      Bienvenido a nuestra tienda
+    </Header>
+    <Button color='orange' size='medium' className="centeredButton">VER TODO</Button>
+  </Container>
+);
+
+// Validación con PropTypes
 DesktopBanner.propTypes = {
   banner: PropTypes.array.isRequired,
 };
@@ -40,7 +41,7 @@ MobileBanner.propTypes = {
   banner: PropTypes.array.isRequired,
 };
 
-const ResponsiveBanner = ({ banner }) => (
+const ResponsiveBanner = ({ banner = [] }) => (
   <MediaContextProvider>
     <Media greaterThan='tablet'>
       <DesktopBanner banner={banner} />
