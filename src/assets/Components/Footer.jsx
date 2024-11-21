@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Container,
   Divider,
@@ -87,31 +88,149 @@ const FixedMenuLayout = () => (
 
         {/* Sección de información */}
         <Grid.Column>
-          <List link size='small' style={{ fontSize: '1.1em', color: '#FFFFFF' }}>
-            {['Ubicación', 'Contáctanos', 'Términos y condiciones', 'Política de privacidad'].map((item, index) => (
-              <List.Item 
-                as='a' 
-                href='#' 
-                key={index}
+            <List link size='small' style={{ fontSize: '1.1em', color: '#FFFFFF' }}>
+            <List.Item
+                as={Link}
+                to='/'
                 style={{
-                  color: '#FFFFFF', 
-                  fontWeight: 'bold', 
+                  color: '#FFFFFF',
+                  fontWeight: 'bold',
                   transition: 'color 0.3s',
                   display: 'block',
                   padding: '5px 0'
                 }}
-                onMouseEnter={(e) => e.target.style.color = '#ffd19b'} 
-                onMouseLeave={(e) => e.target.style.color = '#FFFFFF'}
               >
-                {item}
+                Inicio
               </List.Item>
-            ))}
-          </List>
-        </Grid.Column>
+              <List.Item
+                as={Link}
+                to='/api'
+                style={{
+                  color: '#FFFFFF',
+                  fontWeight: 'bold',
+                  transition: 'color 0.3s',
+                  display: 'block',
+                  padding: '5px 0'
+                }}
+              >
+                Ubicación
+              </List.Item>
+              <List.Item
+                as={Link}
+                to='/productos'
+                style={{
+                  color: '#FFFFFF',
+                  fontWeight: 'bold',
+                  transition: 'color 0.3s',
+                  display: 'block',
+                  padding: '5px 0'
+                }}
+              >
+                Productos
+              </List.Item>
+              
+              <List.Item
+                as={Link}
+                to='/registro'
+                style={{
+                  color: '#FFFFFF',
+                  fontWeight: 'bold',
+                  transition: 'color 0.3s',
+                  display: 'block',
+                  padding: '5px 0'
+                }}
+              >
+                Registro
+              </List.Item>
+            </List>
+          </Grid.Column>
 
       </Grid>
     </Container>
   </Segment>
 );
 
+const Footer = () => {
+  return (
+    <footer style={{ backgroundColor: '#333', padding: '20px 0', color: '#FFFFFF' }}>
+      <Grid container>
+        {/* Sección de redes sociales */}
+        <Grid.Column>
+          <List horizontal>
+            <List.Item>
+              <Icon
+                name='linkedin'
+                size='big'
+                style={{ color: '#FFFFFF', transition: 'color 0.3s' }}
+                onMouseEnter={(e) => e.target.style.color = '#0077B5'}
+                onMouseLeave={(e) => e.target.style.color = '#FFFFFF'}
+              />
+            </List.Item>
+            {/* Agrega más íconos de redes sociales aquí */}
+          </List>
+        </Grid.Column>
+
+        {/* Sección de información */}
+        <Grid.Column>
+          <List link size='small' style={{ fontSize: '1.1em', color: '#FFFFFF' }}>
+            <List.Item
+              as='a'
+              href='/api'
+              style={{
+                color: '#FFFFFF',
+                fontWeight: 'bold',
+                transition: 'color 0.3s',
+                display: 'block',
+                padding: '5px 0'
+              }}
+            >
+              Ubicación
+            </List.Item>
+            <List.Item
+              as='a'
+              href='/api'
+              style={{
+                color: '#FFFFFF',
+                fontWeight: 'bold',
+                transition: 'color 0.3s',
+                display: 'block',
+                padding: '5px 0'
+              }}
+            >
+              Contáctanos
+            </List.Item>
+            <List.Item
+              as='a'
+              href='/terminos-y-condiciones'
+              style={{
+                color: '#FFFFFF',
+                fontWeight: 'bold',
+                transition: 'color 0.3s',
+                display: 'block',
+                padding: '5px 0'
+              }}
+            >
+              Términos y condiciones
+            </List.Item>
+            <List.Item
+              as='a'
+              href='/politica-de-privacidad'
+              style={{
+                color: '#FFFFFF',
+                fontWeight: 'bold',
+                transition: 'color 0.3s',
+                display: 'block',
+                padding: '5px 0'
+              }}
+            >
+              Política de privacidad
+            </List.Item>
+          </List>
+        </Grid.Column>
+      </Grid>
+    </footer>
+  );
+};
+
 export default FixedMenuLayout;
+export { Footer };
